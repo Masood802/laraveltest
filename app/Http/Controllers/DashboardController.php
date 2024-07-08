@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        return view('recipie.dashboard',[
+        return view('recipie.home',[
             'categories'=>Category::all()
         ]);
     }

@@ -9,8 +9,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RecipiesController;
 
 
-Route::get('/dashboard',[DashboardController::class,'index'])
-->name('dashboard')
+Route::get('/',[DashboardController::class,'index'])
+->name('home')
 ->middleware('auth');
 
 
@@ -34,7 +34,9 @@ Route::get('/createnew',[RecipiesController::class,'create'])->name('create');
 Route::post('/recipies',[RecipiesController::class,'store'])->name('store');
 
 
-Route::get('/',function(){
-    return view('recipie.home');
-})->name('home');
+// Route::get('/',function(){
+//     return view('recipie.home',[
+//             'categories'=>Category::all()
+//         ]);
+// })->name('home');
 
