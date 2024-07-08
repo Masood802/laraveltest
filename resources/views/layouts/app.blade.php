@@ -21,22 +21,22 @@
                 class="flex font-semibold items-center w-[30%] ml-20 text-gray-600"
             >
                 <li
-                    class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
+                    class="p-3 text-2xl hover:text-orange-600 transition-all duration-400 ease-in"
                 >
                     <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </li>
                 <li
-                    class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
+                    class="p-3 text-2xl hover:text-orange-600 transition-all duration-400 ease-in"
                 >
                     <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                 </li>
                 <li
-                    class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
+                    class="p-3 text-2xl hover:text-orange-600 transition-all duration-400 ease-in"
                 >
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li
-                    class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
+                    class="p-3 text-2xl hover:text-orange-600 transition-all duration-400 ease-in"
                 >
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </li>
