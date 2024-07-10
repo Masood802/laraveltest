@@ -13,9 +13,11 @@ class Recipie extends Model
         'name',
         'instruction',
         'picture',
-        'category'
-
-        
+        'category',
+        'ingredients',
+        'link'   
     ];
-    
+//  public function Category(){
+//     return $this->belongsTo('Category'::class,'name');
+//  }   
 }
