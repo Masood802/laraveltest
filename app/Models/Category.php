@@ -12,4 +12,7 @@ class Category extends Model
         'CategoryName',
         'description',
     ];
+    // public function Category(){
+    //     return $this->hasMany(Category::class,'name');
+    // }
 }

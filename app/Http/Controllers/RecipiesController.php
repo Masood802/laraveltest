@@ -9,7 +9,7 @@ class RecipiesController extends Controller
 {
     public function index(){
         return view('recipie.recipies',[
-            'recipies'=>Recipie::all()
+            'recipies'=>Recipie::latest()->simplePaginate(6)
         ]);
     }
     // public function show($id){
@@ -24,7 +24,9 @@ class RecipiesController extends Controller
         $formData=$request->validate([
             'name'=>'required|max:255',
             'instruction'=>'required',
-            'category'=>'required'
+            'category'=>'required',
+            'ingredients'=>'required',
+            'link'=>'required'
         ]);
         if($request->hasFile('picture')){
             $formData['picture']=$request->file('picture')->store('images','public');
