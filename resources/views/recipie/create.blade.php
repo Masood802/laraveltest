@@ -31,6 +31,17 @@
                     </div>
                 @enderror
             </div>
+            <div class="mb-4">
+                <textarea name="ingredients"  cols="30" rows="5" 
+                placeholder="Enter the Ingredients for the reciepie"
+                class="bg-gray-100 border-2 pl-2 w-full h-24 rounded-lg @error('ingredients') border-red-500 @enderror" 
+                value="{{ old('ingredients') }}"></textarea>
+                @error('ingredients')
+                    <div class="text-red-500 mt-2 text-sm">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
 
             <div class="mb-4">
                 <textarea name="instruction"  cols="30" rows="5" 
@@ -43,7 +54,17 @@
                     </div>
                 @enderror
             </div>
-            
+            <div class="mb-4">
+                <label for="link" class="sr-only">Video URL</label>
+                <input type="text" name="link" id="link" placeholder="Enter youtube link of the recipie" 
+                class="bg-gray-100 border-2 w-full p-4 rounded-lg @error('link') border-red-500 @enderror" value="{{ old('link') }}">
+
+                @error('link')
+                    <div class="text-red-500 mt-2 text-sm">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
             <div class="mb-4">
                 <input type="file" name="picture">
             </div>
