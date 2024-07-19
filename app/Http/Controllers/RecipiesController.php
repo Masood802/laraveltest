@@ -9,14 +9,9 @@ class RecipiesController extends Controller
 {
     public function index(){
         return view('recipie.recipies',[
-            'recipies'=>Recipie::latest()->simplePaginate(6)
+            'recipies'=>Recipie::latest()->Paginate(6)
         ]);
     }
-    // public function show($id){
-    //     return view('recipie.single',[
-    //         'recipie'=>Recipie::find($id)
-    //     ]);
-    // }
     public function create(){
         return view('recipie.create');
     }

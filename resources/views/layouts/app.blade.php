@@ -46,14 +46,15 @@
                 <li
                     class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
                 >
-                    <a href="">Welcome,{{ auth()->user()->name}}</a>
+                    <a href="">Welcome,{{ auth()->user()->username}}</a>
                 </li>
                 <li
                     class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
                 >
                     <a href="{{ route('logout') }}">logout</a>
                 </li>
-                @endauth @guest
+                @endauth
+                 @guest
                 <li
                     class="p-3 hover:text-orange-600 transition-all duration-400 ease-in"
                 >

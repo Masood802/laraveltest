@@ -8,7 +8,7 @@
         Our Recipies
     </h1>
 </div>
-    <div class="grid grid-cols-3 gap-4 w-[90%] mx-auto mt-8">
+    <div class="grid grid-cols-3 gap-4 w-[90%] mx-auto mt-16">
         @foreach($recipies as $recipie)
         <div
             class="shadow-md overflow-hidden flex flex-col h-[550px] my-6 mx-3 items-center justify-center border-0 border-gray-100"
@@ -48,7 +48,7 @@
         @endforeach
     </div>
 </div>
-<div class="mt-4 p-4 w-full flex justify-center items-center">
-        {{$recipies->links()}}
+<div class="px-auto flex items-center justify-center m-2">
+       {{$recipies->links()}} 
 </div>
 @endsection

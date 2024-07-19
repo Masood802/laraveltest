@@ -44,6 +44,8 @@
         </div>
         @endforeach
     </div>
-</div>
-<a href="" class="flex items-center justify-center bg-orange-500 w-44 mx-auto py-2 text-white rounded-md">Back</a>
+    @if(count($filteredlists)>0)
+    <div> <h1>No Recipies in {{$list}} categoy</h1></div>
+    @endif
+<a href="{{ url()->previous() }}" class="flex items-center justify-center bg-orange-500 w-44 mx-auto py-2 text-white rounded-md">Back</a>
 @endsection

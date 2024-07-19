@@ -9,9 +9,9 @@
                 <span class="text-white text-8xl top-[60%] left-[35%] absolute font-extrabold">Delicius Recipies</span>
         </div>
         <!-- Category section -->
-                <p class="text-center text-orange-600 font-light text-xl mt-4">Choose a Category</p>
+                <p class="text-center text-orange-600 font-light text-xl mt-4 pt-12">Choose a Category</p>
                 <h1 class="text-6xl font-extrabold text-center my-2 text-gray-700">Our Categories</h1>
-        <div class="flex justify-between items-center h-32 w-[90%] mx-auto my-10">
+        <div class="flex justify-between items-center h-32 w-[90%] mx-auto my-12">
             @foreach($categories as $category)
         <a href="/{{$category->CategoryName}}"> 
             <div class="flex items-center flex-col">
@@ -23,7 +23,7 @@
         </div>
         <!-- Recipies section -->
         
-            <p class="text-center text-orange-600 font-light text-xl mt-4">Our Papular Recipies</p>
+            <p class="text-center text-orange-600 font-light text-xl mt-4 pt-12">Our Papular Recipies</p>
             <h1 class="text-6xl font-extrabold text-center my-2 text-gray-700">Recipies</h1>
         <div class="grid grid-cols-3 gap-4  w-[90%] mx-auto mt-6">
             @foreach($recipies as $recipie)
@@ -46,7 +46,8 @@
             @endif
             @endforeach 
         </div>
-        <div class="w-full flex items-center justify-center my-6">
+        {{-- button to view all recipies --}}
+        <div class="w-full flex items-center justify-center my-6 py-8">
                 <a href="{{route('recipies')}}" 
                 class="bg-lime-600 text-white text-center rounded-md w-40 h-10 px-4 py-2">
                 View All Recipies</a>
